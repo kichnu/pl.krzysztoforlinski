@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+    .cointainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            width: 200px;
+            justify-content: space-between;
+            align-items: center;
+
+            .number-columns,
+            .number-rows,
+            .number-colors,
+            .levels {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-around;
+                align-items: center;
+                height: 90px;
+                width: 180px;
+                background-color: #03a9f4;
+
+                .minus,
+                .plus {
+                    padding: 0;
+                    border: none;
+                    cursor: pointer;
+                    transition: 300ms;
+                    margin-bottom: 8px;
+                    background: transparent;
+                }
+
+                .fas {
+                    font-size: 20px;
+
+                }
+
+                .display {
+                    text-align: center;
+                    width: 40px;
+                    margin-bottom: 8px;
+                    font-size: 30px;
+                    font-weight: 100;
+                }
+
+                .column-description,
+                .rows-description,
+                .colors-description,
+                .levels-description {
+                    margin-top: 12px;
+                    text-transform: uppercase;
+                    padding: 0%;
+                    width: 100%;
+                    font-size: 11px;
+                    text-align: center;
+                }
+            }
+
+            .show {
+                position: absolute;
+                background-color: red;
+                height: 110px;
+                width: 180px;
+                font-size: 50px;
+                text-transform: uppercase;
+                text-align: center;
+                padding-top: 15px;
+
+                .game,
+                .over {
+                    font-size: 45px;
+                    display: block;
+                    line-height: 1;
+                }
+
+                .over {
+                    font-size: 30px;
+                }
+            }
+
+            .control {
+                height: 110px;
+                width: 180px;
+                border: none;
+                font-size: 36px;
+                font-family: 'Montserrat', sans-serif;
+                background-color: #00E676;
+            }
+
+            .stop {
+                background-color: red;
+            }
+
+            .points {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                height: 110px;
+                width: 180px;
+                line-height: 2;
+                background-color: rgb(223, 235, 61);
+
+                .result {
+                    font-size: 26px;
+                }
+
+                .description {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

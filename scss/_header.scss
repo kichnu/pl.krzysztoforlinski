@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: #ECEFF1;
+    height: 60px;
+  
+    &--desktop {
+      @include mixins-min(desk12, n) {
+        width: calc(100vw - 150px);
+      }
+    }
+  
+    &--middle {
+      @include mixins-min(desk12, n) {
+        width: 50%;
+      }
+    }
+  }
+  
+  .header__name {
+    font-weight: 300;
+    font-size: 14px;
+  
+    @include mixins-min(ph40, n) {
+      font-size: 16px;
+    }
+  }
+  
+  .header__postscript {
+    margin-left: 15px;
+    color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+  }

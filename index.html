@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138710996-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138710996-1');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class=" header header--middle">
+      <span class="header__name">Krzysztof Orliński<span class="header__postscript">nigdy niczego nie
+          żałuj</span></span>
+    </header>
+    <div class="content content--mobile content--middle">
+
+      <ul class="primary-nav js-nav__list">
+        <li class="primary-nav__item js-nav__item"><a href="about-me.html" class="primary-nav__link js-main__nav">
+            <h1 class="primary-title">Krótko
+              o mnie</h1>
+          </a></li>
+        <li class="primary-nav__item js-nav__item"><a href="projects.html" class="primary-nav__link js-main__nav">
+            <h1 class="primary-title">Moje projekty</h1>
+          </a></li>
+        <li class="primary-nav__item js-nav__item"><a href="history.html"
+            class="primary-title primary-nav__link js-main__nav ">
+            <h1 class="primary-title">Moje historie</h1>
+          </a></li>
+        <li class="primary-nav__item js-nav__item"><button class="primary-title primary-nav__btn js-nav-contact">
+            <h1 class="primary-title">Kontakt</h1>
+          </button></li>
+      </ul>
+
+    </div>
+
+    <footer class="footer footer--middle footer--mobile">
+      <div class="footer__copyright"> 2019 &copy | Strona wykorzystuje pliki cookies</div>
+      <div class="footer__policy"><a class="footer__link" href="politics.html">dowiedz się więcej</a></div>
+    </footer>
+
+    <div class="primary-picture js-picture"></div>
+
+
+    <div class="contact-form js-contact-form">
+      <button class="contact__button-close" type="reset">
+        <span class="contact__bar"></span>
+        <span class="contact__bar"></span>
+      </button>
+
+      <form class="form" id="contactForm" method="post" novalidate action="send-script.php">
+        <div class="form__row">
+          <label class="form__label" for="field-name">Imię</label>
+          <input class="form__input" type="text" name="name" required id="field-name" data-error="Wypełnij to pole."
+            pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="field-email">Email</label>
+          <input class="form__input" type="email" name="email" required id="field-email"
+            data-error="Wpisz poprawny email." pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="field-message">Wiadomość</label>
+          <textarea class="form__input textarea" name="message" required data-error="Coś napisz." id="field-message"
+            pattern=".+"></textarea>
+        </div>
+        <div class="form__row form__row-checkbox">
+          <label class="checkbox-cnt">
+            <input type="checkbox" required data-error="Musisz zaznaczyć" name="regulation">
+            <i class="state" aria-hidden="true"></i>
+            <span>Zapoznałem się z polityką prywatności.</span>
+          </label>
+        </div>
+        <div class="form__row">
+          <button type="submit" class="submit-btn">
+            Wyślij
+          </button>
+          <div class="contact-wrapper-media">
+
+            <a href="https://www.youtube.com/channel/UC4OmdPPrwah_Ft5WUZqj5tA" target="blank"><i
+                class="fab fa-youtube-square"></i></a>
+            <a href="https://www.linkedin.com/in/krzysztof-orli%C5%84ski-915545155/" target="blank"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </form>
+    </div>
+<div class="ssssssssssssssssssssssssssssssss"></div>
+
+  </div>
+
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

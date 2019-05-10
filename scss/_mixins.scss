@@ -1,0 +1,36 @@
+$breakpoints: ("ph30": 300px,
+"ph40": 480px,
+"tab60": 560px,
+"tab70": 768px,
+"tab80": 800px,
+"tab100":1024px,
+"desk12": 1248px,
+"desk14": 1440px,
+"desk16": 1600px);
+
+// @include mixins-min(){
+// 
+// }
+@mixin mixins-min($width, $orientation) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+
+        @if $orientation==p {
+            @media only screen and (orientation: portrait) and (min-width: $width) {
+                @content;
+            }
+        }
+
+        @else if $orientation==l {
+            @media only screen and (orientation: landscape) and (min-height: $width) {
+                @content;
+            }
+        }
+
+        @else if $orientation==n {
+            @media (min-width: $width) {
+                @content;
+            }
+        }
+    }
+}

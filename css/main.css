@@ -1,0 +1,190 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+body .cointainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+body .cointainer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+  width: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .cointainer nav .number-columns,
+body .cointainer nav .number-rows,
+body .cointainer nav .number-colors,
+body .cointainer nav .levels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  width: 180px;
+  background-color: #03a9f4;
+}
+
+body .cointainer nav .number-columns .minus,
+body .cointainer nav .number-columns .plus,
+body .cointainer nav .number-rows .minus,
+body .cointainer nav .number-rows .plus,
+body .cointainer nav .number-colors .minus,
+body .cointainer nav .number-colors .plus,
+body .cointainer nav .levels .minus,
+body .cointainer nav .levels .plus {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  margin-bottom: 8px;
+  background: transparent;
+}
+
+body .cointainer nav .number-columns .fas,
+body .cointainer nav .number-rows .fas,
+body .cointainer nav .number-colors .fas,
+body .cointainer nav .levels .fas {
+  font-size: 20px;
+}
+
+body .cointainer nav .number-columns .display,
+body .cointainer nav .number-rows .display,
+body .cointainer nav .number-colors .display,
+body .cointainer nav .levels .display {
+  text-align: center;
+  width: 40px;
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+body .cointainer nav .number-columns .column-description,
+body .cointainer nav .number-columns .rows-description,
+body .cointainer nav .number-columns .colors-description,
+body .cointainer nav .number-columns .levels-description,
+body .cointainer nav .number-rows .column-description,
+body .cointainer nav .number-rows .rows-description,
+body .cointainer nav .number-rows .colors-description,
+body .cointainer nav .number-rows .levels-description,
+body .cointainer nav .number-colors .column-description,
+body .cointainer nav .number-colors .rows-description,
+body .cointainer nav .number-colors .colors-description,
+body .cointainer nav .number-colors .levels-description,
+body .cointainer nav .levels .column-description,
+body .cointainer nav .levels .rows-description,
+body .cointainer nav .levels .colors-description,
+body .cointainer nav .levels .levels-description {
+  margin-top: 12px;
+  text-transform: uppercase;
+  padding: 0%;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+body .cointainer nav .show {
+  position: absolute;
+  background-color: red;
+  height: 110px;
+  width: 180px;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+
+body .cointainer nav .show .game,
+body .cointainer nav .show .over {
+  font-size: 45px;
+  display: block;
+  line-height: 1;
+}
+
+body .cointainer nav .show .over {
+  font-size: 30px;
+}
+
+body .cointainer nav .control {
+  height: 110px;
+  width: 180px;
+  border: none;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #00E676;
+}
+
+body .cointainer nav .stop {
+  background-color: red;
+}
+
+body .cointainer nav .points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  height: 110px;
+  width: 180px;
+  line-height: 2;
+  background-color: #dfeb3d;
+}
+
+body .cointainer nav .points .result {
+  font-size: 26px;
+}
+
+body .cointainer nav .points .description {
+  font-size: 16px;
+}
+/*# sourceMappingURL=main.css.map */

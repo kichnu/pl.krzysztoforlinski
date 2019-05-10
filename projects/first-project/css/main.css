@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20%;
+    margin-left: -30%;
+    width: 60vw;
+    height: 40vw;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 243);
+}
+
+.round {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-top: -32%;
+    margin-left: -32%;
+    width: 64%;
+    height: 96%;
+    /* border: solid 1px black;
+    border-radius: 50%; */
+    text-align: center;
+}
+
+.round i {
+    font-size: 5vw;
+    line-height: 14vw;
+}
+
+.scissors,
+.paper,
+.stone,
+.centre {
+    position: absolute;
+    border-radius: 50%;
+    width: 36%;
+    height: 36%;
+    /* border: solid 1px black; */
+    /* background-color: chartreuse; */
+}
+
+.scissors {
+    top: 15%;
+    left: 5%;
+}
+
+.paper {
+    top: 16%;
+    right: 5%;
+}
+
+.stone {
+    bottom: 0.3%;
+    left: 50%;
+    margin: 0 -20%;
+}
+
+.centre {
+    border: none;
+    border-radius: 50%;
+    top: 32%;
+    left: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+
+    margin: 0;
+    line-height: 3vw;
+    font-size: 2vw;
+}
+
+aside {
+    box-sizing: border-box;
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    width: 22%;
+    height: 50%;
+    /* border: solid 1px black; */
+}
+
+.statistic,
+.number,
+.win,
+.draw,
+.lose {
+    line-height: 4vw;
+    text-align: left;
+    font-size: 2.5vw;
+    box-sizing: border-box;
+    /* border: solid 1px black; */
+    height: 30%
+}
+
+aside div:not(.statistic) {
+    text-align: left;
+    font-size: 2vw;
+    height: 16%;
+}
+
+button {
+    box-sizing: border-box;
+    background-color: rgb(242, 242, 243);
+    outline: none;
+    border: solid 0.05em black;
+    width: 70%;
+    border-radius: 3px;
+    margin: 40% 0%;
+    line-height: 3vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+button:hover {
+    background-color: rgb(215, 215, 221);
+}

@@ -1,0 +1,56 @@
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid black;
+    justify-content: left;
+    height: 60px;
+    font-size: 10px;
+    font-weight: 300;
+  
+    @include mixins-min(tab60, n) {
+      font-size: 14px;
+    }
+  
+    &--desktop {
+      @include mixins-min(desk12, n) {
+        width: calc(100vw - 150px);
+      }
+    }
+  
+    &--middle {
+      @include mixins-min(desk12, n) {
+        width: 50%;
+      }
+    }
+  }
+  
+  .footer__copyright {
+    margin-left: 5%;
+  }
+  
+  .footer__policy {
+    margin-left: 10px;
+    text-transform: uppercase;
+  
+    &--text {
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+  
+    &:hover {
+      background-color: #ECEFF1;
+    }
+  }
+  
+  .footer__link {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
