@@ -88,11 +88,11 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 100px;
+    width: 80px;
     height: 100%;
     font-size: 33px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     a {
         color: #444444;
@@ -281,14 +281,18 @@
 }
 
 .field-error {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
     color: #E01546;
     font-size: 14px;
     text-align: right;
-    margin-top: 3px;
+
 }
 
 .form__row-checkbox>.field-error {
-    margin-top: 10px;
+    bottom: -15px;
+    right: calc(100% - 155px);
     text-align: left;
 }
 
@@ -420,7 +424,6 @@ input {
 
 .checkbox-cnt {
     display: flex;
-    margin: 0% 7% 0;
 
     .input-checkbox {
         width: 20px;

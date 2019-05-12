@@ -8,19 +8,20 @@ const listPhotos = {
 }
 const picture = document.querySelector('.js-picture');
 const contactWrapperButtonClose = document.querySelector('.contact__button-close');
+const contaktWrapper = document.querySelector('.js-contact-form')
 
 const arrayElements = document.querySelectorAll('.js-main__nav');
 
 for (let i = 0; i < arrayElements.length; i++) {
     arrayElements[i].addEventListener('mousemove', function () {
-        if (innerWidth > 1190) {
+        if (innerWidth > 1248 && !contaktWrapper.classList.contains('js-contact-form--visibly')) {
             picture.style.backgroundImage = `url(${listPhotos.mainSite[i]})`;
         }
     })
 }
 
 const navContact = document.querySelector('.js-nav-contact');
-const contaktWrapper = document.querySelector('.js-contact-form')
+
 navContact.addEventListener('click', function () {
     contaktWrapper.classList.add('js-contact-form--visibly')
 })
@@ -29,10 +30,7 @@ contactWrapperButtonClose.addEventListener('click', function () {
     contaktWrapper.classList.remove('js-contact-form--visibly');
 })
 
-
-
-
-const navList = document.querySelectorAll('.js-nav__item');
+var navList = document.querySelectorAll('.js-nav__item');
 
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {

@@ -187,4 +187,149 @@ body .cointainer nav .points .result {
 body .cointainer nav .points .description {
   font-size: 16px;
 }
+/*# sourceMappingURL=main.css.map */]:focus::-ms-fill-lower {
+  background: #b0bec5;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #b0bec5;
+}
+
+.arrow-up,
+.arrow-down,
+.list {
+  position: absolute;
+  width: 121px;
+  height: 50px;
+  left: -120px;
+  background-color: #FFF8E1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.arrow-up:hover,
+.arrow-down:hover,
+.list:hover {
+  border: 0;
+  padding: 0;
+}
+
+.arrow-up .fas,
+.arrow-down .fas,
+.list .fas {
+  color: #333;
+  font-size: 50px;
+}
+
+.fas:hover {
+  color: #85b3ca;
+}
+
+.arrow-up {
+  bottom: 80px;
+}
+
+.arrow-down {
+  bottom: 0;
+}
+
+.list {
+  bottom: 50px;
+  line-height: 30px;
+  font-size: 12px;
+  height: 30px;
+  text-transform: uppercase;
+}
+
+.guidebook {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFF8E1;
+  top: -300px;
+  left: calc((100vw - 320px) / 2);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.guidebook h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 30px 0 10px;
+  text-transform: uppercase;
+}
+
+.guidebook-list {
+  padding: 5px 20px 0 40px;
+}
+
+.guidebook-list li {
+  padding-top: 3px;
+  font-size: 16px;
+}
+
+.guidebook-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background-color: #FFF8E1;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.guidebook-close:hover {
+  border: none;
+  border-radius: 0;
+  background-color: #85b3ca;
+}
+
+.guidebook-close span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  display: block;
+  width: 25px;
+  border-top: 1px black solid;
+}
+
+.guidebook-close span:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.show-guidebook {
+  position: absolute;
+  left: 50%;
+  left: calc(((100vw - 320px) - 20px) / 2);
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #FFF8E1;
+  font-size: 35px;
+  -webkit-transition: top .5s;
+  transition: top .5s;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.show-guidebook:hover {
+  border: none;
+  border-radius: 0;
+  background-color: #85b3ca;
+}
 /*# sourceMappingURL=main.css.map */

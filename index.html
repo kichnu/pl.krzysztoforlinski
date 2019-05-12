@@ -5,6 +5,9 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Page Title</title>
+
+
+
   <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,700&amp;subset=latin-ext" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
@@ -43,11 +46,10 @@
         <li class="primary-nav__item js-nav__item"><a href="projects.html" class="primary-nav__link js-main__nav">
             <h1 class="primary-title">Moje projekty</h1>
           </a></li>
-        <li class="primary-nav__item js-nav__item"><a href="history.html"
-            class="primary-title primary-nav__link js-main__nav ">
+        <li class="primary-nav__item js-nav__item"><a href="history.html" class="primary-nav__link js-main__nav ">
             <h1 class="primary-title">Moje historie</h1>
           </a></li>
-        <li class="primary-nav__item js-nav__item"><button class="primary-title primary-nav__btn js-nav-contact">
+        <li class="primary-nav__item js-nav__item"><button class="primary-title primary-nav__btn js-nav-contact js-main__nav">
             <h1 class="primary-title">Kontakt</h1>
           </button></li>
       </ul>
@@ -68,7 +70,7 @@
         <span class="contact__bar"></span>
       </button>
 
-      <form class="form" id="contactForm" method="post" novalidate action="send-script.php">
+      <form class="form" id="contactForm" method="post" novalidate action="/php/send-script.php">
         <div class="form__row">
           <label class="form__label" for="field-name">Imię</label>
           <input class="form__input" type="text" name="name" required id="field-name" data-error="Wypełnij to pole."
@@ -81,7 +83,7 @@
         </div>
         <div class="form__row">
           <label class="form__label" for="field-message">Wiadomość</label>
-          <textarea class="form__input textarea" name="message" required data-error="Coś napisz." id="field-message"
+          <textarea class="form__input textarea" name="message" required data-error="Napisz coś." id="field-message"
             pattern=".+"></textarea>
         </div>
         <div class="form__row form__row-checkbox">
@@ -105,7 +107,7 @@
         </div>
       </form>
     </div>
-<div class="ssssssssssssssssssssssssssssssss"></div>
+    <div class="ssssssssssssssssssssssssssssssss"></div>
 
   </div>
 

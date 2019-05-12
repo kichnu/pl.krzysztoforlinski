@@ -35,13 +35,8 @@
     list-style: none;
 
     @include mixins-min(desk12, n) {
-        height: 70%;
-    }
-
-    &--policy {
-        @include mixins-min(desk12, n) {
-            height: 80%;
-        }
+        justify-content: flex-start;
+        padding-top: 5vh;
     }
 }
 
