@@ -1,96 +1,125 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Krzysztof Orliński | Gra w życie</title>
+    <meta
+      name="description"
+      content="Moje portfolio. Implementacja mechaniki gry w JavaScrypt."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,400"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page Title</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-</head>
+  <body>
+    <div class="side-display">
+      <div class="contener-panel">
+        <div class="panel-squares"></div>
+      </div>
+      <div class="contener-nav">
+        <ul class="nav">
+          <li class="add-clean">
+            <button class="button-add">Dodaj wzór do listy</button>
+          </li>
+          <li>
+            <button class="button-clean">Usuń utworzony wzór</button>
+          </li>
+          <li class="remove">
+            <button class="button-remove">
+              Usuń zaznaczone <br />
+              wzory z listy
+            </button>
+          </li>
+          <li class="check-animate">
+            <button class="button-animate">
+              Dodaj zaznaczony wzór do animacji
+            </button>
+          </li>
+          <li class="start">
+            <button class="button-start">Start</button>
+          </li>
+          <li class="pause">
+            <button class="button-pause">Pauza</button>
+          </li>
+          <li class="reset">
+            <button class="button-reset">restart</button>
+          </li>
+          <li class="range-list">
+            <input
+              class="range"
+              type="range"
+              min="1"
+              max="10"
+              value="3"
+              step=".1"
+            />
+          </li>
+        </ul>
 
-<body>
-
-  <div class="side-display">
-    <div class="contener-panel">
-      <div class="panel-squares"></div>
+        <div class="arrow-box">
+          <div class="desc">
+            <span class="min">min</span>
+            <span class="speed">speed</span>
+            <span class="max">max</span>
+          </div>
+        </div>
+        <button class="arrow-up"><i class="fas fa-angle-up"></i></button>
+        <div class="list">Lista wzorów</div>
+        <button class="arrow-down"><i class="fas fa-angle-down"></i></button>
+      </div>
     </div>
-    <div class="contener-nav">
 
-      <ul class="nav">
-        <li class="add-clean">
-          <button class="button-add">Dodaj wzór do listy</button>
+    <button class="show-guidebook">?</button>
+
+    <div class="guidebook">
+      <h3>Jak grać</h3>
+
+      <ul class="guidebook-list">
+        <li>Klikając w pola szochownicy tworzysz wzór komórek do animacji.</li>
+        <li>
+          Utworzony wzór możesz dodać do listy lub usunąć; klikając w zielony
+          lub czerwony przycisk.
         </li>
         <li>
-          <button class="button-clean">Usuń utworzony wzór</button>
+          Wzory na liście zaznaczasz klikając w nie. Zaznaczone na żółto wzory
+          można usunąć z listy klikając w żółty przycisk.
         </li>
-        <li class="remove">
-          <button class="button-remove">Usuń zaznaczone <br> wzory z listy</button>
-        </li>
-        <li class="check-animate">
-          <button class="button-animate">Dodaj zaznaczony wzór do animacji</button>
-        </li>
-        <li class="start">
-          <button class="button-start">Start</button>
-        </li>
-        <li class="pause">
-          <button class="button-pause">Pauza</button>
-        </li>
-        <li class="reset">
-          <button class="button-reset">restart</button>
-        </li>
-        <li class="range-list">
-          <input class="range" type="range" min="1" max="10" value="3" step=".1" />
+        <li>
+          Wzór, który chcesz przenieść na tablicę do animacj należy zaznaczyć na
+          liście i kliknąć w niebieski przycisk. Kursorem myszki wskazujemy
+          miejsce na akranie do wklejenia wzoru i klikamy. Możesz przenieść
+          dowolnie dużo wzorów.
         </li>
       </ul>
 
-      <div class="arrow-box">
-        <div class="desc">
-          <span class="min">min</span>
-          <span class="speed">speed</span>
-          <span class="max">max</span>
-        </div>
-      </div>
-      <button class="arrow-up"><i class="fas fa-angle-up"></i></button>
-      <div class="list">Lista wzorów</div>
-      <button class="arrow-down"><i class="fas fa-angle-down"></i></button>
+      <button class="guidebook-close">
+        <span></span>
+        <span></span>
+      </button>
     </div>
 
-  </div>
-
-  <button class="show-guidebook">?</button>
-
-  <div class="guidebook">
-    <h3>Jak grać</h3>
-
-    <ul class="guidebook-list">
-      <li>Klikając w pola szochownicy tworzysz wzór komórek do animacji.</li>
-      <li>Utworzony wzór możesz dodać do listy lub usunąć; klikając w zielony lub czerwony przycisk.</li>
-      <li>Wzory na liście zaznaczasz klikając w nie. Zaznaczone na żółto wzory można usunąć z listy klikając w żółty
-        przycisk.</li>
-      <li>Wzór, który chcesz przenieść na tablicę do animacj należy zaznaczyć na liście i kliknąć w niebieski przycisk.
-        Kursorem myszki wskazujemy miejsce na akranie do wklejenia wzoru i klikamy. Możesz przenieść dowolnie dużo
-        wzorów.</li>
-    </ul>
-
-    <button class="guidebook-close">
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-
-  <canvas></canvas>
-  <script src="js/guidebook.js"></script>
-  <script src="js/scroll.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/draw-arrow.js"></script>
-  <script src="js/pattern.js"></script>
-  <script src="js/list-your-patterns.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <canvas></canvas>
+    <script src="js/guidebook.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/draw-arrow.js"></script>
+    <script src="js/pattern.js"></script>
+    <script src="js/list-your-patterns.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
