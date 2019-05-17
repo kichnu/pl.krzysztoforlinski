@@ -19,12 +19,20 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400&amp;subset=latin-ext"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/tetris.css" />
   </head>
 
   <body>
     <div class="cointainer">
       <canvas></canvas>
+      <div class="guidebook">
+        <h1 class="guidebook-header">Jak grać?</h1>
+        <ul class="guidebook-list">
+          <li class="guidebook-item">W menu obok ustaw preferowane parametry gry.</li>
+          <li class="guidebook-item">Nawigujesz za pomocą sztrzałek na klawiaturze.</li>
+          <li class="guidebook-item">Naciśnij start i ciesz się grą!</li>
+        </ul>
+      </div>
       <nav>
         <div class="number-columns">
           <div class="column-description">Wybierz liczbę kolumn</div>
@@ -79,13 +87,10 @@
           <span class="description">Zdobyte punkty</span>
         </div>
       </nav>
-      <footer></footer>
     </div>
 
     <script src="nav.js"></script>
     <!-- <script src="Square.js"></script> -->
     <script src="Main.js"></script>
-
-    <div class="ddd"></div>
   </body>
 </html>

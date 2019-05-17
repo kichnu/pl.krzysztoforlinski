@@ -81,12 +81,14 @@ document.querySelector("nav").addEventListener("click", function(e) {
 
   if (e.target.classList.contains("control")) {
     const classStop = document.querySelector(".control");
+    const guidebook = document.querySelector(".guidebook");
     if (classStop.classList.contains("stop")) {
       classStop.classList.remove("stop");
       classStop.innerText = "Start";
       location.reload();
     } else {
       classStop.classList.add("stop");
+      guidebook.classList.add("hidden");
       classStop.innerText = "Stop";
       permissioToStart();
     }

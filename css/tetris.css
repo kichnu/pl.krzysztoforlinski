@@ -24,6 +24,33 @@ body .cointainer {
   background: #ffffff;
 }
 
+body .cointainer .guidebook {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 3px;
+  width: 550px;
+  height: 170px;
+  background-color: #ffffff;
+}
+
+body .cointainer .hidden {
+  display: none;
+}
+
+body .cointainer .guidebook-header {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+body .cointainer .guidebook-item {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
 body .cointainer nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,4 +210,4 @@ body .cointainer nav .points .result {
 body .cointainer nav .points .description {
   font-size: 16px;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=tetris.css.map */
