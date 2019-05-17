@@ -22,7 +22,8 @@ document.querySelector(".row-display").innerText = parameters.numberRows;
 document.querySelector(".color-display").innerText = parameters.numberColors;
 document.querySelector(".level-display").innerText = parameters.numberLevels;
 
-document.querySelector("nav").addEventListener("click", function(e) {
+document.querySelector(".nav").addEventListener("click", function(e) {
+  console.log('sssssssssssssss');
   if (e.target.classList.contains("columns-minus")) {
     parameters.numberColumns -= 5;
     if (parameters.numberColumns >= 5) {
@@ -80,6 +81,7 @@ document.querySelector("nav").addEventListener("click", function(e) {
   }
 
   if (e.target.classList.contains("control")) {
+    console.log('ifo');
     const classStop = document.querySelector(".control");
     const guidebook = document.querySelector(".guidebook");
     if (classStop.classList.contains("stop")) {
@@ -90,6 +92,7 @@ document.querySelector("nav").addEventListener("click", function(e) {
       classStop.classList.add("stop");
       guidebook.classList.add("hidden");
       classStop.innerText = "Stop";
+      console.log('start');
       permissioToStart();
     }
   }
